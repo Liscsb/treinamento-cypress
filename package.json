@@ -1,0 +1,30 @@
+{
+  "name": "treinamento-cypress",
+  "version": "1.0.0",
+  "description": "treinamento cypress omega",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Lisandra São Bernardo",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^8.4.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/integration/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".json"
+    }
+  },
+  "dependencies": {
+    "chance": "^1.1.8"
+  },
+  "keywords": []
+}
